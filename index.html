@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Map</title>
+	<style type="text/css">
+		
+		#map
+		{
+			height: 500px;
+			width: 100%;
+		}
+
+	</style>
+</head>
+<body>
+<h1>My Google Map</h1>
+<div id="map"></div>
+<script>
+	
+	function initMap(){
+
+		var options = {
+
+			zoom:7,
+			center:{lat:23.7337,lng:69.8597}
+
+		}
+
+		var map = new google.maps.Map(document.getElementById('map'),options);
+		//23.7337° N, 69.8597° E
+	}
+
+</script>
+<script 
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZaciEIi5ChjTfImzWP5r_fZgodlM6fQg
+&callback=initMap"
+    async defer></script>
+
+</body>
+</html>
